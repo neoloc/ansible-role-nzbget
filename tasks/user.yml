@@ -1,0 +1,15 @@
+---
+- name: "Create {{ nzbget }} group"
+  ansible.builtin.group:
+    name: "{{ nzbget__group }}"
+    state: present
+
+- name: "Create {{ nzbget__username }} user"
+  ansible.builtin.user:
+    name: "{{ nzbget__username }}"
+    password: "{{ nzbget__password }}"
+    groups:
+      - "{{ nzbget__group }}"
+    append: yes
+    shell: /usr/bin/env nologin
+    state: present

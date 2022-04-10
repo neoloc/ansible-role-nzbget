@@ -1,2 +1,5 @@
 ---
-# defaults file for myrole
+nzbget__use_nginx: yes
+nzbget__username: nzbget
+nzbget__group: media
+nzbget__password: "!"
