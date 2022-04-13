@@ -11,6 +11,8 @@
     path: /etc/nzbget.conf
     regexp: "^DaemonUsername"
     line: "DaemonUsername={{ nzbget__username }}"
+    owner: "{{ nzbget__username }}"
+    group: "{{ nzbget__username }}"
   notify:
     - Restart NZBGet
 

@@ -44,3 +44,10 @@ def test_user(host):
     assert 'media' in u.groups
     assert u.password == '!'
     assert u.shell == '/usr/bin/env nologin'
+
+
+def test_conf_file(host):
+    f = host.file('/etc/nzbget.conf')
+
+    assert f.user == 'nzbget'
+    assert f.group == 'nzbget'
