@@ -2,6 +2,7 @@
 - name: "Create {{ nzbget }} group"
   ansible.builtin.group:
     name: "{{ nzbget__group }}"
+    gid: "{{ nzbget__group_id }}"
     state: present
 
 - name: "Create {{ nzbget__username }} user"

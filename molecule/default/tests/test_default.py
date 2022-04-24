@@ -46,6 +46,12 @@ def test_user(host):
     assert u.shell == '/usr/bin/env nologin'
 
 
+def test_group(host):
+    g = host.group('media')
+
+    assert g.gid == 1100
+
+
 def test_conf_file(host):
     f = host.file('/etc/nzbget.conf')
 

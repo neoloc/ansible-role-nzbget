@@ -11,4 +11,5 @@ Galaxy: https://galaxy.ansible.com/coaxial/nzbget
 | nzbget\_\_username  | `nzbget`       | Username under which to run NZBGet                                                      |
 | nzbget\_\_password  | `!` (disabled) | NZBGet user's password                                                                  |
 | nzbget\_\_group     | `media`        | NZBGet user's group                                                                     |
+| nzbget\_\_group_id  | `1100`         | NZBGet user's group GID                                                                 |
 | nzbget\_\_use_nginx | `yes`          | Whether to install and configure nginx (`no` if you're installing/managing it yourself) |
