@@ -1,5 +1,5 @@
 ---
-nzbget__use_nginx: yes
+nzbget_configure: false
 nzbget__username: nzbget
 nzbget__group: media
 nzbget__group_id: 1100

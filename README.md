@@ -1,8 +1,8 @@
 # nzbget role
 
-[![CI](https://github.com/coaxial/ansible-role-nzbget/actions/workflows/ci.yml/badge.svg)](https://github.com/coaxial/ansible-role-nzbget/actions/workflows/ci.yml)
+[![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-neoloc.nzbget-blue.svg)](https://galaxy.ansible.com/neoloc/ansible-role-nzbget/)
 
-Galaxy: https://galaxy.ansible.com/coaxial/nzbget
+Galaxy: https://galaxy.ansible.com/neoloc/nzbget
 
 ## Variables and their defaults
 
@@ -12,4 +12,7 @@ Galaxy: https://galaxy.ansible.com/coaxial/nzbget
 | nzbget\_\_password  | `!` (disabled) | NZBGet user's password                                                                  |
 | nzbget\_\_group     | `media`        | NZBGet user's group                                                                     |
 | nzbget\_\_group_id  | `1100`         | NZBGet user's group GID                                                                 |
-| nzbget\_\_use_nginx | `yes`          | Whether to install and configure nginx (`no` if you're installing/managing it yourself) |
+
+## Original Author
+
+Galaxy: https://galaxy.ansible.com/coaxial/nzbget
