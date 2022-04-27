@@ -4,3 +4,7 @@ nzbget__username: nzbget
 nzbget__group: media
 nzbget__group_id: 1100
 nzbget__password: "!"
+nzbget_additional_packages:
+  - p7zip-full
+  - par2
+  - unrar

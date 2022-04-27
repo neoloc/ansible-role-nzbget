@@ -25,3 +25,9 @@
     mode: "0644"
   notify:
     - Restart NZBGet
+
+- name: Install additional packages
+  ansible.builtin.package:
+    name: "{{ item  }}"
+    state: present
+  with_items: nzbget_additional_packages
